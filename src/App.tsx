@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './views/Navbar/Navbar'
+import Formulario from './views/FormPublicar/FormPublicar'
+import MenuColumn from './views/MenuColumn/MenuColumn'
+import Card from './components/Card/Card'
+import Publicaciones from './views/Publicacion/Publicaciones'
+import Modal from './views/Modal/Modal'
+import {useState} from 'react'
+import  './App.scss'
+import 'primereact/resources/themes/saga-blue/theme.css'
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css'
 
 function App() {
+
+  const [modal,setModal] = useState<Boolean>(false) 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar setModal={setModal}/>
+     <Modal setModal={setModal} modal={modal}/>
+     <div className="Home">
+     <div className="MenuColumn">
+     <MenuColumn/>
+     </div>
+     <div className="HomeCenter">
+     <Formulario/>
+     <Publicaciones/>
+     </div>
+     <div className="MenuDerecha">
+     </div>
+     </div>
     </div>
   );
 }

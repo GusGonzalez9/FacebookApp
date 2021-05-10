@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat&display=swap');
+
+@mixin borderAndCursor {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin hover {
+    transition: .3s ease;
+    background-color:rgba(122, 122, 122, 0.267);
+}
+
+@mixin span {
+    color: white;
+    font-size: .9rem;
+    margin-left: .5rem;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.normal{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    @include borderAndCursor();
+    &:hover{
+       @include hover()
+    }
+        svg,.MuiSvgIcon-root{
+            color: rgb(223, 223, 223);
+            font-size: 1.6rem !important;
+            
+    }
+}
+.rounded{
+    background-color:rgba(122, 122, 122, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    margin-left: 10px;
+    width: 37px;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover{
+        transition: .3s ease;
+        background-color:rgba(168, 168, 168, 0.267);
+    }    
+        svg,.MuiSvgIcon-root{
+            color: rgb(223, 223, 223);
+            font-size: 1.4rem !important;
+
+    }
+}
+
+.rectangle{
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include borderAndCursor();
+    height: 8%;
+    &:hover{
+        @include hover()
+    }  
+    svg,.MuiSvgIcon-root{
+        font-size: 1rem !important;
+    }
+    span{
+        @include span()
+    }
+}
+
+.twoRectangle{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 2rem;
+    align-items: center;
+    @include borderAndCursor();
+    &:hover{
+        @include hover()
+    }  
+
+    svg,.MuiSvgIcon-root{
+        font-size: 1.4rem !important;
+}
+    span{
+        @include span()
+    }
+}

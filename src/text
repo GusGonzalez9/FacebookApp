@@ -1,0 +1,18 @@
+componentes reutilizables = 
+
+-Items de menu lateral
+-Cuadradito de la Navbar (centro y derecha)
+-Input o formm
+
+
+COSAS PARA HACER :
+Pintar el icon search blanco
+ver donde iria el focus de los icons
+
+Definir interfaces 
+
+Definir variables para scss
+
+Como hago que el LABEL se vaya para arriba?
+
+Sacar AutoComplete

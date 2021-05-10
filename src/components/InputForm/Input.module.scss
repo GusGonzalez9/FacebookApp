@@ -1,0 +1,21 @@
+.InputCorrect{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    height: 10%;
+ 
+    &:hover{
+        border: olive;
+    } 
+
+    label{
+        position: absolute;
+        margin-top: .5rem;
+        margin-left: 1.5%; 
+    }
+}
+
+.InputError{
+
+}
