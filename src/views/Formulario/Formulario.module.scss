@@ -1,9 +1,18 @@
 .Formulario{
     width: 98%;
-    height: 22rem;
+    height: 25rem;
+    margin-top: 1.5rem !important;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+}
+.Dropdown{
+     width: 95%; margin:1rem 1rem 1.2rem 1rem !important
+}
+
+.Drop{
+    width: 100%;
+
 }

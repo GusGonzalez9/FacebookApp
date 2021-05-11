@@ -5,14 +5,11 @@ import style from './Modal.module.scss'
 import Formulario from '../Formulario/Formulario'
 
 export default function Modal (props:any)  {
-
     return (
         <div className={style['dialog-demo']}>
-            <div className={style["card"]}>
                 <Dialog header="Register" closeOnEscape={true} visible={props.modal} style={{ width: '40vw' }}  onHide={()=> props.setModal(false)}>
                    <Formulario/>
                 </Dialog>
-            </div>
         </div>
     )
 }
